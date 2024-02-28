@@ -1,0 +1,157 @@
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+img {
+  width: 30px;
+  object-fit: cover;
+  clip-path: circle(55%);
+}
+
+.news i {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.news i::after {
+  content: "1";
+  background-color: var(--base-color-alt);
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  top: -10px;
+  left: -20px;
+  clip-path: circle(30%);
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.navbar {
+  position: fixed;
+  background: var(--base-color);
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 95%);
+}
+
+.navbar a {
+  color: #f2f2f2;
+  text-align: center;
+}
+
+.group-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row-reverse;
+
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  /* 
+  background: linear-gradient(white, white) padding-box,
+  linear-gradient(to right, #5345ac, #f2f2f2) border-box; */
+
+  background: linear-gradient(var(--text-color-light), var(--text-color-light))
+      padding-box,
+    linear-gradient(to right, var(--base-color), var(--text-color-light))
+      border-box;
+  border-radius: 50em;
+  border: 2px solid transparent;
+}
+
+.profile .user-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 17.6rem;
+  /* background: linear-gradient(315deg, #ffffff 100%, #d7e1ec 0%); */
+  background-color: var(--base-color-alt);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  text-align: center;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: 95%;
+  right: 4%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: -13%;
+  left: 86%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--base-color-alt) transparent;
+}
+
+.tooltip .tooltiptext .userName {
+  font-size: 1.6rem;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+.logout a {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: 8rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  align-content: center;
+}
+
+.services > .logout i {
+  font-size: 16px;
+  color: #fff;
+}
+
+.divider {
+  height: 0.1rem;
+  width: 100%;
+  margin: 1rem 0;
+  background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 36%, 57%, 1),
+    hsla(var(--hue), 65%, 88%, 0.34)
+  );
+}

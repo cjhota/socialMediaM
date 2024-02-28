@@ -1,0 +1,108 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 7rem;
+  height: 100%;
+  width: 15%;
+  background: var(--base-color);
+
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+
+.sidebar i {
+  margin-right: 1rem;
+}
+
+.search {
+  display: flex;
+  border-radius: 1.2rem;
+  font-size: 4.2rem;
+  background: var(--text-color-light);
+  color: var(--text-color-black);
+  padding: 0.4rem;
+
+  align-items: center;
+  flex-direction: row-reverse;
+
+  margin: 0 2rem 0px 0.6rem !important;
+}
+
+.sidebar input {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  color: var(--text-color-black);
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: all 0.5s ease;
+  background: var(--text-color-light);
+}
+
+.sidebar #btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 2.2rem;
+  transition: all 0.4s ease;
+  font-size: 2.3rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.sidebar .nav-list {
+  margin-top: 2rem;
+  height: 100%;
+}
+
+.sidebar li {
+  margin: 0.8rem 0;
+  list-style: none;
+}
+
+.sidebar.open input {
+  padding: 0 2rem 0 5rem;
+  width: 100%;
+}
+
+.sidebar li a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  font-size: 2.5rem;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  color: var(--text-color-light);
+  padding: 1rem;
+}
+
+.sidebar li a .links_name {
+  font-size: 1.5rem;
+  color: var(--body-color);
+  font-weight: 400;
+
+  transition: 0.4s;
+}
+
+.sidebar.open li a .links_name {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidebar li a:hover {
+  background: var( --body-color);
+}
+
+.sidebar li a:hover .links_name,
+.sidebar li a:hover i {
+  transition: all 0.5s ease;
+  color: var( --base-color-alt);
+}
+
+.sidebar li i {
+  font-size: 18px;
+  border-radius: 12px;
+}

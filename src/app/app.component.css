@@ -1,0 +1,32 @@
+.content {
+  display: grid;
+  grid-template-columns: 15% 1fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "menu main main"
+    "menu main main"
+    ;
+}
+
+.header {
+   grid-area: header;
+}
+
+.menu {
+   grid-area: menu;
+   width: 40%;
+}
+
+.main {
+   grid-area: main;
+}
+
+/* #wraper {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+#wraper > div {
+  padding-bottom: 500em;
+  margin-bottom: -500em;
+} */
