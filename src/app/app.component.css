@@ -19,6 +19,8 @@
 
 .main {
    grid-area: main;
+   margin-top: 7rem !important;
+   /* width: 99%; */
 }
 
 /* #wraper {

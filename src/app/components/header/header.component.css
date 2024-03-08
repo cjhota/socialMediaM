@@ -17,17 +17,6 @@ img {
   margin-top: 2rem;
 }
 
-.news i::after {
-  content: "1";
-  background-color: var(--base-color-alt);
-  width: 2rem;
-  height: 2rem;
-  position: relative;
-  top: -10px;
-  left: -20px;
-  clip-path: circle(30%);
-}
-
 .hidden {
   opacity: 0;
 }
@@ -90,26 +79,24 @@ img {
 }
 
 .tooltip .tooltiptext {
-  visibility: hidden;
-  width: 17.6rem;
-  /* background: linear-gradient(315deg, #ffffff 100%, #d7e1ec 0%); */
+  margin-top: -1.5rem;
+  visibility: visible;
+  width: 19rem;
   background-color: var(--base-color-alt);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   text-align: center;
+  padding: 1rem 3rem;
   border-radius: 0.6rem;
-  padding: 1rem;
-  position: absolute;
-  z-index: 1;
-  top: 95%;
-  right: 4%;
+  z-index: 999;
+
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
 
-.tooltip .tooltiptext::after {
+/* .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
   top: -13%;
@@ -117,7 +104,7 @@ img {
   border-width: 5px;
   border-style: solid;
   border-color: transparent transparent var(--base-color-alt) transparent;
-}
+} */
 
 .tooltip .tooltiptext .userName {
   font-size: 1.6rem;
@@ -128,7 +115,7 @@ img {
   flex-direction: column;
 }
 
-.logout a {
+.logout {
   display: flex;
   flex-direction: row-reverse;
   margin-left: 8rem;

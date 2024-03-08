@@ -19,4 +19,5 @@ import { HomeComponent } from './components/pages/home/home.component';
 })
 export class AppComponent {
   title = 'system';
+  
 }

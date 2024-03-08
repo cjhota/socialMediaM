@@ -28,6 +28,10 @@
   margin: 0 2rem 0px 0.6rem !important;
 }
 
+.search i {
+  color: var(--text-color-black);
+}
+
 .sidebar input {
   margin-left: 0.3rem;
   font-size: 1.5rem;
